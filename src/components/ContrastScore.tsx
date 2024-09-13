@@ -27,7 +27,7 @@ const ContrastScore = ( { ratio }: ContrastScoreProps ) => {
         <p className="text-3xl font-bold">
           {ratio.toFixed(2)}
         </p>
-        <p className="text-lg flex items-center gap-2">
+        <div className="text-lg flex items-center gap-2">
           Accessibility Level:
           <p
             style={{color: accessibilityLevel}}
@@ -35,7 +35,7 @@ const ContrastScore = ( { ratio }: ContrastScoreProps ) => {
           >
             {accessibilityLevel}
           </p> 
-        </p>
+        </div>
       </div>
     </div>
   )
