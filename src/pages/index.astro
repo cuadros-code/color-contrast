@@ -1,14 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import ColorCheckerCard from '../components/ColorChecker';
 ---
 
 <Layout title="Contrast Color">
 	<main class="flex flex-col items-center justify-center h-screen">
 		<h1 class="text-6xl font-bold text-center">Contrast Color</h1>
-		<p class="text-center text-xl">
-			This is a simple website that demonstrates the contrast color of the text.
+		<p class="text-center text-xl mt-3">
+			Validate the contrast of your text colors.
 		</p>
 		<ColorCheckerCard  client:visible/>
 	</main>
